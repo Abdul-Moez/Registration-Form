@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Red+Hat+Mono:wght@400;500;600;700&display=swap");
+
+:root {
+  --blackopsfont: "Black Ops One", cursive;
+  --redhatfont: "Red Hat Mono", monospace;
+}
+
+body {
+  background: url(../img/body-bg.gif);
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.regi {
+  font-family: var(--blackopsfont);
+}
+
+.form-body {
+  background: rgba(57, 57, 60, 0.2);
+  border-radius: 1rem;
+  width: 30rem;
+  text-align: center;
+  color: #fff;
+}
+
+.form-label {
+  font-family: var(--redhatfont);
+}
+
+.form-input {
+  width: 80%;
+  background: #161a1c;
+  border: none;
+  outline: none;
+  color: #fff;
+  height: 2.5rem;
+}
+
+.form-input:focus {
+  border-bottom: 2px solid #fff;
+  font-size: 24px;
+}
+
+.registerbtn {
+  background: #161a1c;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  transition: 250ms ease-in-out;
+}
+
+.registerbtn:hover {
+  background: #fff;
+  color: #161a1c;
+  transition: 250ms ease-in-out;
+}
+
+.terms-condition,
+.signin,
+.signup {
+  font-family: var(--redhatfont);
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 2000px) {
+  .form-body {
+    width: 45rem;
+  }
+  body {
+    height: 100vh;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .form-body {
+    width: 23rem;
+  }
+  body {
+    height: 115vh;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .form-body {
+    width: 22rem;
+  }
+  body {
+    height: 120vh;
+  }
+}
